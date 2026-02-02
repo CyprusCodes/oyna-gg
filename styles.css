@@ -381,8 +381,6 @@ nav {
   transform: translateY(0);
 }
 
-
-
 .feature-number {
   position: absolute;
   left: -25px;
@@ -460,8 +458,6 @@ nav {
   position: relative;
 }
 
-
-
 .feature-text {
   flex: 1;
 }
@@ -482,8 +478,6 @@ nav {
   line-height: 1.8;
   font-size: 1.1rem;
 }
-
-
 
 /* Platform Highlights Section */
 .platform-highlights {
