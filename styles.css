@@ -210,6 +210,19 @@ nav {
   margin-top: 2rem;
 }
 
+.download-buttons a {
+  transition: all 0.3s ease;
+}
+
+.download-buttons a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.download-buttons img {
+  transition: all 0.3s ease;
+}
+
 .download-btn {
   display: inline-flex;
   align-items: center;
