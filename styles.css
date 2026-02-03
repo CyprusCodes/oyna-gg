@@ -828,8 +828,22 @@ footer::before {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  header {
+    padding: 0.8rem 0;
+    border-radius: 0;
+  }
+
   .nav-links {
     display: none;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    padding: 6px 12px;
   }
 
   .hero-content {
@@ -879,12 +893,18 @@ footer::before {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    width: 100%;
   }
 
-  .download-btn {
+  .download-buttons a {
     width: 100%;
-    max-width: 300px;
-    justify-content: center;
+    max-width: 280px;
+  }
+
+  .download-buttons img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
   }
 
   .features h2 {
@@ -937,30 +957,52 @@ footer::before {
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
+    padding: 3rem 2rem;
+    justify-items: center;
+    align-items: center;
   }
 
   .cta-text {
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .cta h2 {
     font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta p {
+    margin-bottom: 2rem;
   }
 
   .cta-images {
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .cta-phone {
-    max-width: 140px;
+    display: none !important; /* Hide images on mobile for better UX */
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 120px 0 60px;
+  }
+
   .hero-text h1 {
     font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
 
   .phone-stack {
@@ -1046,14 +1088,27 @@ footer::before {
 
   .cta h2 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
-  .cta-images {
-    flex-direction: column;
+  .cta p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-content {
+    padding: 2rem 1rem;
+    text-align: center;
+    justify-items: center;
     align-items: center;
   }
 
-  .cta-phone {
-    max-width: 120px;
+  .cta-text {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .cta-images {
+    display: none !important; /* Keep hidden on small screens */
   }
 }
